@@ -31,7 +31,7 @@ Self-Driving Car Engineer Nanodegree Program
 * Then our cost functions gave values which tell us whether there are vehicles close by in the right or left lane. 
 * Lane with the minimum cost was chosen to move the vehicle. 
 
-### 6. Safety Features to avoid collision
+### 7. Safety Features to avoid collision
 * The car will slow down if distance from front vehicle becomes less than 30m.
 * The car will slow down very very quickly if distance from front vehicle becomes less than 5m.
 * Car can only change lanes if its velocity is greater than 35mph, this will prevent car getting hit from behind.
