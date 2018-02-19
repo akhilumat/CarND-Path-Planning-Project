@@ -16,3 +16,10 @@ Self-Driving Car Engineer Nanodegree Program
 * Used for loop to increase the value of ref_v to 49.5 mph slightly below the desired speed limit.
 
 ### 4. Keeping Max Acceleration and Jerk below desired limit
+* To keep the acceleration within desired limit velocity was increased in the steps of 0.225 mph. Also when decelarating when vehicle was close velocity was reduced in steps of 0.225 mph.
+* To prevent side ways jerk we used splines to generate the new path and also used points from previous path for path generation. This ensured smooth lane shift by vehicle. 
+
+### 5. Collision avoidance
+* To avoid collision with vehicles sensor fusion data was used. d and s value of vehicles in front of our vehicle were used. When the difference between car_s and s value of front vehicle in same lane became less than 30, velocity of our vehicle was reduced. 
+
+### 6. Changing Lane
