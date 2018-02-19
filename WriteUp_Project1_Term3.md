@@ -33,7 +33,7 @@ Self-Driving Car Engineer Nanodegree Program
 
 ### 7. Safety Features to avoid collision
 * The car will slow down if distance from front vehicle becomes less than 30m.
-* The car will slow down very very quickly if distance from front vehicle becomes less than 2.5m.
+* The car will slow down very very quickly if distance from front vehicle becomes less than 5m.
 * Car can only change lanes if its velocity is greater than 35mph, this will prevent car getting hit from behind.
 * If d value of cars in neighbouring lanes comes very close to cars d value, car will slow down quickly so that cars in the neighbouring lanes can go ahead without hitting the car. This generally means cars in side lanes are changing lane or behaving erraticaly. 
 * Car can only change lane if there is safe gap of 50m in the new lane.
