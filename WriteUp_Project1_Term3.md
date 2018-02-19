@@ -10,4 +10,9 @@ Self-Driving Car Engineer Nanodegree Program
 
 2. Staying in Lane
 * To stay in lane I used Frenet coordinates.  Points generated had there d value equal to (2 + 4*lane). This will keep the new points generated in the center of the lane, since width of each lane was 4m. 
-*
+
+3. Maintaining Speed Limit
+* Speed of the vehicle depend on the the distance between the points appended to next_x_values and next_y_values. Formulas used were N = (t_dist/(0.02*ref_v/2.24)) and x_p = x_add + (t_x/N) in line 387 & 388 of the code. If the ref_v value is large N is small and distance between points is large.
+* Used for loop to increase the value of ref_v to 49.5 mph slightly below the desired speed limit.
+
+4. Keeping Max Acceleration and Jerk below desired limit
