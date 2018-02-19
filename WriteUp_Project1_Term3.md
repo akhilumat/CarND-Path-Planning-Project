@@ -23,7 +23,7 @@ Self-Driving Car Engineer Nanodegree Program
 * To avoid collision vehicles sensor fusion data was used. d and s value of vehicles in front of our vehicle were used. When the difference between car_s and s value of front vehicle in same lane became less than 30, velocity of our vehicle was reduced by 0.225 mph until distance increases. 
 
 ### 6. Changing Lane
-* To change the vehicle lane behavior planner was generated. I built two cost functions - Inefficiency cost function and change lane cost function.
+* To change the ego vehicle's lane, behavior planner was generated. I built two cost functions - Inefficiency cost function and change lane cost function.
 * Inefficiency cost increases as the vehicle velocity became less than target velocity. It is 0 when velocity is equal to target velocity and increases exponentially as the difference increases.
 * Change lane cost fuction uses sensor fusion data. When the vehicle in either left or right lane from the eqo vehicle is in the range of -12m to 35m cost function returned 1 else it returned 0.
 * These two cost functions where used decide the state of vehicle. Whether to keep lane, change lane right or change lane left. 
